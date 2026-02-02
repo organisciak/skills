@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "outlook-web",
-      "source": ".",
+      "source": "./",
       "description": "Access Outlook Web for email and calendar operations - reading, composing (as drafts by default), searching, and managing emails and calendar events via playwright-cli"
     }
   ]
