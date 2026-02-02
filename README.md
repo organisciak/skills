@@ -29,16 +29,17 @@ A Claude Code plugin that enables browser automation of Outlook Web (outlook.off
 ## Prerequisites
 
 **Required:**
-1. A took taht supports skills (Claude Code, Codex, OpenClaw)
-3. **playwright-cli** - Install the official Playwright CLI plugin:
-   ```bash
-   /plugin marketplace add anthropics/playwright-cli-plugin
-   /plugin install playwright-cli
-   ```
+1. **Claude Code CLI** - Install from [anthropic.com/claude-code](https://www.anthropic.com/claude-code)
 
-   Or install via npm:
+2. **playwright-cli** - Install via npm:
    ```bash
    npm install -g @playwright/cli@latest
+   ```
+
+   Or as a Claude Code plugin:
+   ```bash
+   /plugin marketplace add microsoft/playwright-cli
+   /plugin install playwright-cli
    ```
 
 > **Note:** This plugin requires `playwright-cli` to interact with Outlook Web. Ensure it's installed and working before using this skill.
@@ -50,7 +51,7 @@ A Claude Code plugin that enables browser automation of Outlook Web (outlook.off
 Add the marketplace and install the plugin:
 
 ```bash
-/plugin marketplace add organisciak/outlook-web-plugin
+/plugin marketplace add organisciak/outlook-web-skill
 /plugin install outlook-web
 ```
 
@@ -61,7 +62,7 @@ For agents without automatic plugin support, install the skill directly:
 ```bash
 mkdir -p ~/.claude/skills/outlook-web
 curl -o ~/.claude/skills/outlook-web/SKILL.md \
-  https://raw.githubusercontent.com/organisciak/outlook-web-plugin/main/skills/outlook-web/SKILL.md
+  https://raw.githubusercontent.com/organisciak/outlook-web-skill/main/skills/outlook-web/SKILL.md
 ```
 
 Optionally, install the reference documentation:
@@ -69,9 +70,9 @@ Optionally, install the reference documentation:
 ```bash
 mkdir -p ~/.claude/skills/outlook-web/references
 curl -o ~/.claude/skills/outlook-web/references/ui-patterns.md \
-  https://raw.githubusercontent.com/organisciak/outlook-web-plugin/main/skills/outlook-web/references/ui-patterns.md
+  https://raw.githubusercontent.com/organisciak/outlook-web-skill/main/skills/outlook-web/references/ui-patterns.md
 curl -o ~/.claude/skills/outlook-web/OPTIMIZATION-AUDIT.md \
-  https://raw.githubusercontent.com/organisciak/outlook-web-plugin/main/skills/outlook-web/OPTIMIZATION-AUDIT.md
+  https://raw.githubusercontent.com/organisciak/outlook-web-skill/main/skills/outlook-web/OPTIMIZATION-AUDIT.md
 ```
 
 ### From Source (Development)
@@ -79,8 +80,8 @@ curl -o ~/.claude/skills/outlook-web/OPTIMIZATION-AUDIT.md \
 Clone and use locally:
 
 ```bash
-git clone https://github.com/organisciak/outlook-web-plugin.git
-cd outlook-web-plugin
+git clone https://github.com/organisciak/outlook-web-skill.git
+cd outlook-web-skill
 claude --plugin-dir .
 ```
 
@@ -268,8 +269,8 @@ Peter Organisciak
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/organisciak/outlook-web-plugin/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/organisciak/outlook-web-plugin/discussions)
+- **Issues**: [GitHub Issues](https://github.com/organisciak/outlook-web-skill/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/organisciak/outlook-web-skill/discussions)
 
 ---
 

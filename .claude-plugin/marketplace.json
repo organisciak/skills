@@ -1,0 +1,32 @@
+{
+  "name": "organisciak-plugins",
+  "owner": {
+    "name": "Peter Organisciak",
+    "email": "organisciak@gmail.com"
+  },
+  "metadata": {
+    "description": "Productivity and automation plugins for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "outlook-web",
+      "source": ".",
+      "description": "Access Outlook Web for email and calendar operations - reading, composing (as drafts by default), searching, and managing emails and calendar events via playwright-cli",
+      "version": "1.0.0",
+      "author": {
+        "name": "Peter Organisciak",
+        "email": "organisciak@gmail.com"
+      },
+      "keywords": [
+        "outlook",
+        "email",
+        "calendar",
+        "automation",
+        "playwright",
+        "office365",
+        "productivity"
+      ],
+      "category": "productivity"
+    }
+  ]
+}
