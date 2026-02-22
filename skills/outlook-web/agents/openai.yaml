@@ -1,0 +1,4 @@
+interface:
+  display_name: "Outlook Web"
+  short_description: "Read, draft, and manage Outlook Web mail/calendar"
+  default_prompt: "Use $outlook-web to review my inbox and draft replies safely."
